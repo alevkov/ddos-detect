@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16D0D81D092EAD985F1EAB47 /* Pods_ddos_detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069FBD3CC0EBA7645286740E /* Pods_ddos_detector.framework */; };
+		97AF48C41EA2D3AD002432FA /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97AF48C31EA2D3AD002432FA /* AppDelegate.mm */; };
+		97AF48C71EA2D3AD002432FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AF48C61EA2D3AD002432FA /* main.m */; };
+		97AF48CA1EA2D3AD002432FA /* DDViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97AF48C91EA2D3AD002432FA /* DDViewController.mm */; };
+		97AF48CC1EA2D3AD002432FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97AF48CB1EA2D3AD002432FA /* Assets.xcassets */; };
+		97AF48CF1EA2D3AD002432FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97AF48CD1EA2D3AD002432FA /* Main.storyboard */; };
+		97AF48D71EA2D509002432FA /* PCAPAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97AF48D61EA2D509002432FA /* PCAPAnalyzer.mm */; };
+		97AF48DD1EA2E96E002432FA /* libpcap.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF48DB1EA2E96E002432FA /* libpcap.A.tbd */; };
+		97AF48DE1EA2E96E002432FA /* libpcap.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF48DC1EA2E96E002432FA /* libpcap.tbd */; };
+		D9379F511EA3DC36009AA49A /* DDView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9379F501EA3DC36009AA49A /* DDView.mm */; };
+		D9379F581EA58AB4009AA49A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9379F571EA58AB4009AA49A /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		069FBD3CC0EBA7645286740E /* Pods_ddos_detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ddos_detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AF48BF1EA2D3AD002432FA /* ddos-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ddos-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AF48C21EA2D3AD002432FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97AF48C31EA2D3AD002432FA /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		97AF48C61EA2D3AD002432FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97AF48C81EA2D3AD002432FA /* DDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
+		97AF48C91EA2D3AD002432FA /* DDViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DDViewController.mm; sourceTree = "<group>"; };
+		97AF48CB1EA2D3AD002432FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97AF48CE1EA2D3AD002432FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97AF48D01EA2D3AD002432FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97AF48D61EA2D509002432FA /* PCAPAnalyzer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PCAPAnalyzer.mm; sourceTree = "<group>"; };
+		97AF48D91EA2D559002432FA /* PCAPAnalyzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAPAnalyzer.h; sourceTree = "<group>"; };
+		97AF48DB1EA2E96E002432FA /* libpcap.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpcap.A.tbd; path = usr/lib/libpcap.A.tbd; sourceTree = SDKROOT; };
+		97AF48DC1EA2E96E002432FA /* libpcap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpcap.tbd; path = usr/lib/libpcap.tbd; sourceTree = SDKROOT; };
+		99E464AFE120361F380A8937 /* Pods-ddos-detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ddos-detector.release.xcconfig"; path = "Pods/Target Support Files/Pods-ddos-detector/Pods-ddos-detector.release.xcconfig"; sourceTree = "<group>"; };
+		B17D90024CACC0E7CD745919 /* Pods-ddos-detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ddos-detector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ddos-detector/Pods-ddos-detector.debug.xcconfig"; sourceTree = "<group>"; };
+		D9379F4F1EA3DC36009AA49A /* DDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDView.h; sourceTree = "<group>"; };
+		D9379F501EA3DC36009AA49A /* DDView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDView.mm; sourceTree = "<group>"; };
+		D9379F571EA58AB4009AA49A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D9379F591EA58AB8009AA49A /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/ddos-detector-gkgdtadsbprhxdbdonkaiqaewegl/Build/Products/Debug/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		D9379F5B1EA5D78B009AA49A /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../../Library/Developer/Xcode/DerivedData/ddos-detector-gkgdtadsbprhxdbdonkaiqaewegl/Build/Products/Debug/Charts/Charts.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97AF48BC1EA2D3AD002432FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9379F581EA58AB4009AA49A /* MapKit.framework in Frameworks */,
+				97AF48DD1EA2E96E002432FA /* libpcap.A.tbd in Frameworks */,
+				97AF48DE1EA2E96E002432FA /* libpcap.tbd in Frameworks */,
+				16D0D81D092EAD985F1EAB47 /* Pods_ddos_detector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B1E442981E7F351B0AD1B85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B17D90024CACC0E7CD745919 /* Pods-ddos-detector.debug.xcconfig */,
+				99E464AFE120361F380A8937 /* Pods-ddos-detector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97AF48B61EA2D3AD002432FA = {
+			isa = PBXGroup;
+			children = (
+				97AF48C11EA2D3AD002432FA /* ddos-detector */,
+				97AF48C01EA2D3AD002432FA /* Products */,
+				97AF48DA1EA2E96E002432FA /* Frameworks */,
+				5B1E442981E7F351B0AD1B85 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		97AF48C01EA2D3AD002432FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97AF48BF1EA2D3AD002432FA /* ddos-detector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97AF48C11EA2D3AD002432FA /* ddos-detector */ = {
+			isa = PBXGroup;
+			children = (
+				D9379F4E1EA3DC1B009AA49A /* Views */,
+				D9379F4D1EA3126D009AA49A /* Controllers */,
+				D9379F4C1EA31258009AA49A /* PCAPAnalyzer */,
+				97AF48C21EA2D3AD002432FA /* AppDelegate.h */,
+				97AF48C31EA2D3AD002432FA /* AppDelegate.mm */,
+				97AF48CB1EA2D3AD002432FA /* Assets.xcassets */,
+				97AF48CD1EA2D3AD002432FA /* Main.storyboard */,
+				97AF48D01EA2D3AD002432FA /* Info.plist */,
+				97AF48C51EA2D3AD002432FA /* Supporting Files */,
+			);
+			path = "ddos-detector";
+			sourceTree = "<group>";
+		};
+		97AF48C51EA2D3AD002432FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97AF48C61EA2D3AD002432FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97AF48DA1EA2E96E002432FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9379F5B1EA5D78B009AA49A /* Charts.framework */,
+				D9379F591EA58AB8009AA49A /* libAFNetworking.a */,
+				D9379F571EA58AB4009AA49A /* MapKit.framework */,
+				97AF48DB1EA2E96E002432FA /* libpcap.A.tbd */,
+				97AF48DC1EA2E96E002432FA /* libpcap.tbd */,
+				069FBD3CC0EBA7645286740E /* Pods_ddos_detector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9379F4C1EA31258009AA49A /* PCAPAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				97AF48D91EA2D559002432FA /* PCAPAnalyzer.h */,
+				97AF48D61EA2D509002432FA /* PCAPAnalyzer.mm */,
+			);
+			name = PCAPAnalyzer;
+			sourceTree = "<group>";
+		};
+		D9379F4D1EA3126D009AA49A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97AF48C81EA2D3AD002432FA /* DDViewController.h */,
+				97AF48C91EA2D3AD002432FA /* DDViewController.mm */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D9379F4E1EA3DC1B009AA49A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9379F4F1EA3DC36009AA49A /* DDView.h */,
+				D9379F501EA3DC36009AA49A /* DDView.mm */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97AF48BE1EA2D3AD002432FA /* ddos-detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97AF48D31EA2D3AD002432FA /* Build configuration list for PBXNativeTarget "ddos-detector" */;
+			buildPhases = (
+				A515C50CF1DB779ECA8DDB8E /* [CP] Check Pods Manifest.lock */,
+				97AF48BB1EA2D3AD002432FA /* Sources */,
+				97AF48BC1EA2D3AD002432FA /* Frameworks */,
+				97AF48BD1EA2D3AD002432FA /* Resources */,
+				7B40C231944DEFB00F40F446 /* [CP] Embed Pods Frameworks */,
+				9D850480026C63A85F85AF8F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ddos-detector";
+			productName = "ddos-detector";
+			productReference = 97AF48BF1EA2D3AD002432FA /* ddos-detector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97AF48B71EA2D3AD002432FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Joanna Bitton";
+				TargetAttributes = {
+					97AF48BE1EA2D3AD002432FA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 97AF48BA1EA2D3AD002432FA /* Build configuration list for PBXProject "ddos-detector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97AF48B61EA2D3AD002432FA;
+			productRefGroup = 97AF48C01EA2D3AD002432FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97AF48BE1EA2D3AD002432FA /* ddos-detector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97AF48BD1EA2D3AD002432FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AF48CC1EA2D3AD002432FA /* Assets.xcassets in Resources */,
+				97AF48CF1EA2D3AD002432FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B40C231944DEFB00F40F446 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ddos-detector/Pods-ddos-detector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ddos-detector/Pods-ddos-detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D850480026C63A85F85AF8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ddos-detector/Pods-ddos-detector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A515C50CF1DB779ECA8DDB8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ddos-detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97AF48BB1EA2D3AD002432FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AF48CA1EA2D3AD002432FA /* DDViewController.mm in Sources */,
+				97AF48C71EA2D3AD002432FA /* main.m in Sources */,
+				97AF48C41EA2D3AD002432FA /* AppDelegate.mm in Sources */,
+				97AF48D71EA2D509002432FA /* PCAPAnalyzer.mm in Sources */,
+				D9379F511EA3DC36009AA49A /* DDView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97AF48CD1EA2D3AD002432FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97AF48CE1EA2D3AD002432FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97AF48D11EA2D3AD002432FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		97AF48D21EA2D3AD002432FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		97AF48D41EA2D3AD002432FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17D90024CACC0E7CD745919 /* Pods-ddos-detector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ddos-detector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jbitton.ddos-detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97AF48D51EA2D3AD002432FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E464AFE120361F380A8937 /* Pods-ddos-detector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ddos-detector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jbitton.ddos-detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97AF48BA1EA2D3AD002432FA /* Build configuration list for PBXProject "ddos-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AF48D11EA2D3AD002432FA /* Debug */,
+				97AF48D21EA2D3AD002432FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97AF48D31EA2D3AD002432FA /* Build configuration list for PBXNativeTarget "ddos-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AF48D41EA2D3AD002432FA /* Debug */,
+				97AF48D51EA2D3AD002432FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97AF48B71EA2D3AD002432FA /* Project object */;
+}
